@@ -48,15 +48,15 @@
   .icon:focus {
   fill: #ffffff;
   }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .workers-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-.workers-list-item-link:hover,
-.workers-list-item-link:focus {
-  background-color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

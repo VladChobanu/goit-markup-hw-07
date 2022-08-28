@@ -161,7 +161,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .site-nav .link-nav:hover,
 .site-nav .link-nav:focus {
   color: #2196f3;
@@ -185,18 +184,17 @@ body {
 .connection .icon {
   margin-right: 10px;
 }
-
-.link-conn {
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-}
-
 .connection .link:hover,
 .connection .link:focus {
   color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-conn {
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-right: 0px;
 }
 
 .connection-link {
@@ -398,18 +396,16 @@ body {
 .workers-list-item-link .icon:focus {
   fill: #ffffff;
 }
+.workers-list-item-link:hover, .workers-list-item-link:focus {
+  background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .workers-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.workers-list-item-link:hover,
-.workers-list-item-link:focus {
-  background-color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-title {
@@ -492,8 +488,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address .link:hover,
-.address .link:focus {
+.address .link:hover, .address .link:focus {
   color: #2196f3;
 }
 
@@ -527,6 +522,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.location-list-item-link:hover, .location-list-item-link:focus {
+  background-color: var(--accent-color);
+}
 
 .location-list {
   display: flex;
@@ -535,11 +533,6 @@ body {
 }
 .location-list .icon {
   fill: #ffffff;
-}
-
-.location-list-item-link:hover,
-.location-list-item-link:focus {
-  background-color: var(--accent-color);
 }
 
 .submit-btn {
@@ -639,8 +632,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons-list button:hover,
-.buttons-list button:focus {
+.buttons-list button:hover, .buttons-list button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   cursor: pointer;

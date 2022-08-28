@@ -42,7 +42,7 @@ button {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -215,7 +215,11 @@ body {
   text-align: center;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
   background-image: url(../images/background-picture.jpg);
   background-color: var(--secondary-background);
   background-position: center;
@@ -361,7 +365,8 @@ body {
 
 .team-list-item {
   width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   padding-bottom: 30px;
@@ -396,7 +401,8 @@ body {
 .workers-list-item-link .icon:focus {
   fill: #ffffff;
 }
-.workers-list-item-link:hover, .workers-list-item-link:focus {
+.workers-list-item-link:hover,
+.workers-list-item-link:focus {
   background-color: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -488,7 +494,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address .link:hover, .address .link:focus {
+.address .link:hover,
+.address .link:focus {
   color: #2196f3;
 }
 
@@ -522,7 +529,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.location-list-item-link:hover, .location-list-item-link:focus {
+.location-list-item-link:hover,
+.location-list-item-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -632,12 +640,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons-list button:hover, .buttons-list button:focus {
+.buttons-list button:hover,
+.buttons-list button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
   border: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -687,7 +697,8 @@ h2 {
 .project-item:hover,
 .project-item:focus {
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -744,7 +755,8 @@ h2 {
   min-height: 581px;
   padding: 44px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms linear;
@@ -924,7 +936,7 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #2196f3;
   margin-left: 6px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

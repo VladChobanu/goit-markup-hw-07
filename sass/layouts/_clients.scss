@@ -22,15 +22,15 @@
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.clients__link .icon:hover,
-.clients__link .icon:focus {
-  fill: var(--accent-color);
-}
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent-color);
-}
+  .icon:hover,
+  .icon:focus {
+   fill: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+} 
 .clients__link:hover .icon,
 .clients__link:focus .icon {
   fill: var(--accent-color);

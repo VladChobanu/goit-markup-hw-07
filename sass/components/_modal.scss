@@ -39,10 +39,10 @@
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;
+    .icon {
+      fill: #000000;
+    }
   }
-}
-.modal__btn .icon {
-  fill: #000000;
 }
 .modal__btn:hover .icon,
 .modal__btn:focus .icon {
@@ -61,10 +61,7 @@
   margin-bottom: 12px;
   color: #212121;
 }
-.modal-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
+.modal-input
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -82,17 +79,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:hover,
-.modal-input:focus {
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input:hover + .input-icon {
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal-input {
   width: 100%;
   height: 40px;
@@ -100,6 +86,21 @@
   border-radius: 4px;
   padding-left: 42px;
   margin: 0px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover + .input-icon {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  :focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 .modal__area {
   margin-bottom: 10px;
@@ -152,26 +153,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.agreement-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 3px;
-  margin-right: 8px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-checkbox:checked + .agreement-text::before {
-  background-color: var(--accent-color);
-  border: none;
-  background-image: url(../images/vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 8px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-checkbox:checked + &::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .agreement-link {
   font-size: 14px;
